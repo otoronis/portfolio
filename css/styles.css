@@ -64,10 +64,9 @@ body, nav {
 .scroll-down {
 	background: #fff;
 	border: 0.5px solid #fff;
-	height: 50px;
-	margin-left: auto;
-	margin-right: auto;
+	height: 400px;
 	width: 0.5px;
+	padding-bottom: 200px;
 }
 
 /*---------------------------------
@@ -78,8 +77,10 @@ section {
 	margin: 50px;
 }
 
-
-
+.block {
+	margin-left: auto;
+	margin-right: auto;
+}
 
 /*---------------------------------
             TEXT STYLES 86af49 background: #33271d;
@@ -174,6 +175,47 @@ h1 {
 	margin-top: 350px;
 	margin-bottom: 300px;
 	margin-left: 200px;
+}
+
+.slideshow-image {
+	height: 500px;;
+	object-fit: cover;
+	width: 50%;
+}
+
+.arrow {
+	border-top: 2px solid white;
+	border-left: 2px solid white;
+	bottom: 200px;
+	height: 100px;
+	position: relative;
+	width: 100px;
+}
+
+.arrow-left {
+	transform: rotate(-45deg);
+}
+
+.arrow-right {
+	transform: rotate(135deg);
+}
+
+.slideshow * {
+	display: inline-block;
+}
+
+.slideshow {
+	text-align: center;
+}
+
+.arrow {
+	display: none;
+}
+
+.slideshow:hover .arrow {
+	display: inline-block;
+	border-top: 2px solid white;
+	border-left: 2px solid white;
 }
 
 /*---------------------------------
